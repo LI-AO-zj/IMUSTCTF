@@ -120,6 +120,7 @@ venv.bak/
 *.sql
 *.ini
 *..htaccess
+match/settings.py
 
 # Rope project settings
 .ropeproject
