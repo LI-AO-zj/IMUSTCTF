@@ -162,6 +162,8 @@ assetstwo - 大事件日历静态资源
 
 ##### 7.app - study
 
+**目前业务：IMUSTCTF模拟面试**
+
 **模板文件：**
 
 interview.html - 面试页面
@@ -170,6 +172,8 @@ call.html - 模拟面试官页面
 
 
 ##### 8.app - vedio
+
+**目前业务：每日音乐，IMUSTCTF-Video**
 
 **模板文件：**
 
