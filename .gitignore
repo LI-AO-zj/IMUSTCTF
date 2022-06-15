@@ -114,6 +114,13 @@ venv.bak/
 .spyderproject
 .spyproject
 
+# PyCharm ignore
+.logs/
+.idea/
+*.sql
+*.ini
+*..htaccess
+
 # Rope project settings
 .ropeproject
 
