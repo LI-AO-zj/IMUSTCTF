@@ -16,3 +16,9 @@ def imust(request):
         return redirect("/now/login/")
 
     return render(request, "imust.html", {"userflag": userflag})
+
+
+def version(request):
+    userflag = isLogin(request)
+
+    return render(request, "version.html",{"userflag": userflag})

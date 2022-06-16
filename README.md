@@ -149,7 +149,7 @@ personindex.html - 用户主页
 
 ##### 6.app - respon
 
-**目前业务：IMUSTCTF大事件日历**
+**目前业务：IMUSTCTF大事件日历，IMUSTCTF版本日历**
 
 **模板文件：**
 
