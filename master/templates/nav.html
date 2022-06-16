@@ -33,8 +33,9 @@
                                                           alt="Logo"></a></div>
     <div class="main-nav">
         <div class="container" style="z-index:100000">
-            <nav class="navbar navbar-expand-md navbar-light ">{% block display_logo %}<a class="navbar-brand" href="/"><img
-                    src="{% static 'assets/images/logos/logo-1.png' %}" alt="Logo"></a>{% endblock %}
+            <nav class="navbar navbar-expand-md navbar-light ">{% block display_logo %}
+                <a class="navbar-brand" href="/"><img
+                        src="{% static 'assets/images/logos/logo-1.png' %}" alt="Logo"></a>{% endblock %}
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item"><a href="/" class="nav-link {% block index %}{% endblock %}">首页 </a></li>
@@ -95,16 +96,31 @@
                             <ul class="dropdown-menu" style="z-index:100000">
                                 <li class="nav-item"><a href="/ranking/" class="nav-link
                                         {% block information_rank %}{% endblock %}">积分榜 </a></li>
-                                <li class="nav-item"><a href="https://support.qq.com/products/371321"
-                                                        class="nav-link {% block information_community %}{% endblock %}"
-                                                        target="_blank">社区 </a></li>
-                                <li class="nav-item"><a href="/faq/" class="nav-link
-                                        {% block information_help %}{% endblock %}">帮助 </a></li>
-                                <li class="nav-item"><a href="/feedback/"
-                                                        class="nav-link {% block information_feedback %}{% endblock %}">反馈 </a>
+                                <!--  三级选项卡 -->
+                                <li class="nav-item"><a href="#"
+                                                        class="nav-link {% block information_user %}{% endblock %}">用户体验中心
+                                    <i class='bx bx-caret-down'></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="https://support.qq.com/products/371321"
+                                                                class="nav-link
+                                                                        {% block information_user_community %}{% endblock %}"
+                                                                target="_blank">社区 </a>
+                                        </li>
+                                        <li class="nav-item"><a href="/faq/"
+                                                                class="nav-link
+                                                                        {% block information_user_help %}{% endblock %}"
+                                                                >帮助 </a>
+                                        </li>
+                                        <li class="nav-item"><a href="/feedback/"
+                                                                class="nav-link
+                                                                        {% block information_user_feedback%}{% endblock %}"
+                                                                >反馈 </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item"><a href="/now/setdata/"
-                                                        class="nav-link {% block information_setdata %}{% endblock %}" target="_blank">编辑个人信息 </a>
+                                                        class="nav-link {% block information_setdata %}{% endblock %}"
+                                                        target="_blank">编辑个人信息 </a>
                                 </li>
                                 <li class="nav-item"><a href="/respon/imust/"
                                                         class="nav-link {% block information_events %}{% endblock %}">IMUST大事件日历 </a>
@@ -207,19 +223,19 @@
 
 <!--网站底部备案信息-->
 {% block footer %}
-<footer class="footer-area footer-bg">
-    <div class="container">
-        <div class="copy-right-area">
-            <div class="copy-right-text">
-                {% block footer_change %}{% endblock %}
-                <p>Copyright ©2021-2022 IMUSTCTF. All Rights Reserved by dahe<br><a
-                        href="https://beian.miit.gov.cn/"
-                        target="_blank">蒙ICP备
-                    2021005358号</a></p>
+    <footer class="footer-area footer-bg">
+        <div class="container">
+            <div class="copy-right-area">
+                <div class="copy-right-text">
+                    {% block footer_change %}{% endblock %}
+                    <p>Copyright ©2021-2022 IMUSTCTF. All Rights Reserved by dahe<br><a
+                            href="https://beian.miit.gov.cn/"
+                            target="_blank">蒙ICP备
+                        2021005358号</a></p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 {% endblock %}
 <!--网站底部备案信息结束-->
 
