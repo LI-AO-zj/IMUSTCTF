@@ -8,7 +8,6 @@ urlpatterns = [
     # path('admin/', admin.site.urls),        # 后台管理模块，暂时未使用
     path('', msgviews.homeproc),  # 主页
     path('misc/', msgviews.misc),  # misc练习
-    path('sqlilabs/',msgviews.sqlilabs), # sqlilabs练习靶场
     path('subflag/', msgviews.subflag),  # 题目提交flag页面
     path('testflag/', msgviews.textflag),  # 检验flag
     path('faq/', msgviews.faq),  # 帮助

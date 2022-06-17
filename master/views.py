@@ -124,14 +124,6 @@ def faq(request):
 
     return render(request, "faq.html", {"userflag": userflag})
 
-# sqlilabs页面
-def sqlilabs(request):
-    userflag = isLogin(request)
-    if userflag == False:
-        return redirect("/now/login/")
-
-    return render(request, "sqlilabs.html", {"userflag": userflag})
-
 
 # 排行榜
 def ranking(request):
