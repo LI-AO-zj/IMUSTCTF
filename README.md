@@ -155,6 +155,8 @@ personindex.html - 用户主页
 
 imust.html - 大事件日历
 
+version.html - IMUSTCTF版本日历
+
 **静态资源：**
 
 assetstwo - 大事件日历静态资源
@@ -162,13 +164,15 @@ assetstwo - 大事件日历静态资源
 
 ##### 7.app - study
 
-**目前业务：IMUSTCTF模拟面试**
+**目前业务：IMUSTCTF模拟面试，Git练习小游戏**
 
 **模板文件：**
 
 interview.html - 面试页面
 
 call.html - 模拟面试官页面
+
+git.html - Git练习小游戏
 
 
 ##### 8.app - vedio

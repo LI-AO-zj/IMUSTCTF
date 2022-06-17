@@ -12,6 +12,17 @@ def isLogin(request):
         print("登录认证成功！")
         return True
 
+
+# Git学习
+def git(request):
+    userflag = isLogin(request)
+    if userflag == False:
+        return redirect("/now/login/")
+
+    return render(request,'git.html',{"userflag":userflag})
+
+
+
 # 模拟面试主页
 def interview(request):
     userflag = isLogin(request)
